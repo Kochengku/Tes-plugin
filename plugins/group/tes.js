@@ -1,11 +1,7 @@
-async function handler(m, { conn, usedPrefix, text, command, isOwner, isPrivate, usedPrefix:_p, __dirname, args }) {
-switch (command) {
-case 'tes': {
-m.reply('Okew')
+export default {
+  name: "tes",
+  description: "Tes plugin",
+  async execute(m, args) {
+    await m.reply("Plugin tes berhasil dijalankan!");
+  }
 }
-}
-
-handler.command = ['tes']
-handler.help = ['tes']
-handler.tags = ['akun']
-export default handler
